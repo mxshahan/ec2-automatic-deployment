@@ -19,5 +19,5 @@ app.get('/api/v1/user', (req, res) => {
   })
 })
 
-
-app.listen(80, () => console.log("App listening port 80"))
+const port = 8080
+app.listen(port, () => console.log(`App listening port ${port}`))

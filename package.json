@@ -4,8 +4,9 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "sudo pm2 restart app.js"
+    "dev": "nodemon app.js",
+    "start": " pm2 start app.js --name backend",
+    "restart": " pm2 restart backend"
   },
   "keywords": [],
   "author": "",
