@@ -13,7 +13,8 @@ app.get('/api/v1/user', (req, res) => {
     message: "User fetched succesfully",
     user: {
       fullname: "Md Misbauddin Chowdhur",
-      company: "Sylzone Technology"
+      company: "Sylzone Technology",
+      phone: "12345678"
     }
   })
 })
