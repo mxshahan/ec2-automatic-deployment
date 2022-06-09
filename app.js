@@ -6,4 +6,17 @@ app.get('/test', (req, res) => {
   res.send("Hello from express server")
 })
 
+
+app.get('/api/v1/user', (req, res) => {
+  res.json({
+    success: true,
+    message: "User fetched succesfully",
+    user: {
+      fullname: "Md Misbauddin Chowdhur",
+      company: "Sylzone Technology"
+    }
+  })
+})
+
+
 app.listen(80, () => console.log("App listening port 80"))
