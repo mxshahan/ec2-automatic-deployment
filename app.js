@@ -3,18 +3,16 @@ const express = require('express');
 const app = express();
 
 app.get('/test', (req, res) => {
-  res.send("Hello from express server")
+  res.send("Action runner updated")
 })
 
 
 app.get('/api/v1/user', (req, res) => {
   res.json({
     success: true,
-    message: "User fetched succesfully",
-    user: {
-      fullname: "Md Misbauddin Chowdhur",
-      company: "Sylzone Technology",
-      phone: "12345678"
+    message: "User fetched",
+    company: {
+      name: "Hello company"
     }
   })
 })
