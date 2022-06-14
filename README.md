@@ -6,8 +6,9 @@ This is a simple express server where the main focus is to deploy application in
 We need few things to know to deploy application automatically in EC2 or any other cloud server
 
 - Github account
-- AWS or any other cloud server
+- Cloud server (AWS, Digital Ocean etc)
 - Any application (I used nodejs-express server)
+- Use of CLI
 
 So let's dive in
 

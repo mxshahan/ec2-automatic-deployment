@@ -3,9 +3,6 @@ const path = require('path');
 
 const app = express();
 
-app.get('/*', function (req, res) {
-  res.sendFile(path.join(__dirname, 'index.html'));
-});
 
 app.get('/test', (req, res) => {
   res.send('Action runner updated');
@@ -23,6 +20,10 @@ app.get('/api/v1/user', (req, res) => {
   });
 });
 
+
+app.get('/*', function (req, res) {
+  res.sendFile(path.join(__dirname, 'index.html'));
+});
 
 
 const port = 8080;
