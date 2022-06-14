@@ -5,8 +5,7 @@
   "main": "app.js",
   "scripts": {
     "dev": "nodemon app.js",
-    "start": " pm2 start app.js --name backend",
-    "restart": " pm2 restart backend"
+    "start": "pm2 start app.js --name backend"
   },
   "keywords": [],
   "author": "",

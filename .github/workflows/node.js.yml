@@ -26,4 +26,5 @@ jobs:
         cache: 'npm'
     - run: npm ci
     - run: npm install
-    - run: npm run restart
+    - run: pm2 kill
+    - run: npm start
