@@ -5,7 +5,7 @@ const app = express();
 
 
 app.get('/test', (req, res) => {
-  res.send('Action runner updated');
+  res.send('Action runner updated!');
 });
 
 app.get('/api/v1/user', (req, res) => {
@@ -13,9 +13,10 @@ app.get('/api/v1/user', (req, res) => {
     success: true,
     message: 'User fetched',
     user: {
-      fullname: 'Hello company',
+      fullname: 'Misbauddin Chowdhury Shahan',
       email: "user@gmail.com",
-      phone: "+880293938383"
+      phone: "+880293938383",
+      company: "Sylzone",
     },
   });
 });
