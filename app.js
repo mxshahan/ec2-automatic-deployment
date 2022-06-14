@@ -5,7 +5,7 @@ const app = express();
 
 
 app.get('/test', (req, res) => {
-  res.send('Action runner updated!');
+  res.send('Action runner');
 });
 
 app.get('/api/v1/user', (req, res) => {
